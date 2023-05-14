@@ -1,0 +1,10 @@
+development:
+  dialect: postgres
+  datasource: host=localhost port=5432 dbname=ecommerce_platform user=quanbh password=19111993 sslmode=disable
+  dir: migrations
+  table: migrations
+production:
+  dialect: postgres
+  datasource: host=prodhost dbname=proddb user=${DB_USER} password=${DB_PASSWORD} sslmode=required
+  dir: migrations
+  table: migrations
